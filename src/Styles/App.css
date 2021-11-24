@@ -1,0 +1,130 @@
+body {
+  background-color: green;
+  margin: 0px;
+}
+
+#navbar {
+  background-color: blue;
+  width: 100%;
+  height: 60px;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+}
+#navbar header {
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  margin-top: 0;
+}
+#navbar header img[alt=castle] {
+  margin: 5px;
+}
+#navbar header h1 {
+  color: white;
+  font-size: 40px;
+  margin: -50px 50px;
+}
+#navbar header .nav-text {
+  float: right;
+  color: white;
+  font-size: 20px;
+  margin: 15px 15px;
+}
+#navbar header .nav-text a {
+  text-decoration: none !important;
+  color: white;
+}
+
+#sign_up {
+  height: 580px;
+  width: 350px;
+  background-color: #ffd973;
+  float: right;
+  margin-top: 90px;
+  border-radius: 5px 0px 0px 5px;
+}
+#sign_up h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+#sign_up #sign_upFlex {
+  display: flex;
+  flex-direction: column;
+}
+#sign_up .pText {
+  font-size: 22px;
+  margin: 15px 15px;
+}
+#sign_up .input {
+  width: 50%;
+  height: 22px;
+  margin-left: 15px;
+}
+#sign_up #confirm_span {
+  font-size: 22px;
+  margin: 15px 15px;
+}
+#sign_up #signUpBtn {
+  width: 100px;
+  margin: 15px 15px;
+  font-size: 22px;
+  background-color: #e8fc26;
+  border-radius: 5px;
+  border-style: inset;
+  border-color: #cada2f;
+  box-shadow: 3px 3px 5px black;
+}
+#sign_up #signUpBtn:hover {
+  cursor: pointer;
+  background-color: #cf840f;
+  border-color: #aa6e10;
+}
+
+#div2 {
+  background-color: pink;
+  height: 80px;
+  width: 100%;
+}
+
+#root {
+  background-color: red;
+  height: 100px;
+  width: 100%;
+}
+
+#thankyou {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+#thankyou h3 {
+  font-size: 35px;
+}
+#thankyou h4 {
+  font-size: 22px;
+}
+
+#about {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+}
+#about #aboutText {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=App.css.map */
