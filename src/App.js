@@ -1,5 +1,6 @@
 import Header from "./Components/Header.js";
 import SignUp from "./Components/SignUp.js";
+import EbookInfo from "./Components/EbookInfo.js";
 import "./Styles/App.css";
 import { validate } from "./Redux/SignUpThanks";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -12,7 +13,15 @@ function App() {
         <Header />
         <Routes>
           <Route path="/thankyou" element={<ThankYou />} />
-          <Route path="/" element={<SignUp validate={validate} />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <SignUp validate={validate} />
+                <EbookInfo />
+              </>
+            }
+          />
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>

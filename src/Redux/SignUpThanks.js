@@ -35,7 +35,7 @@ export const SignUpThanks = createSlice({
         alert("you must agree to sign up");
         return false;
       }
-      state.signup = true;
+      state.signup = !state.signup;
 
       if (state.signup === true) {
         window.location.href = "/thankyou";
