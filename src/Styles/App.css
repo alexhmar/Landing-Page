@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap");
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #4f4f4d;
   margin: 0px;
@@ -7,102 +11,104 @@ body {
 #navbar {
   background-color: blue;
   width: 100%;
-  height: 60px;
+  height: 6rem;
   margin: 0px;
   position: fixed;
   top: 0;
 }
 #navbar header {
   background-color: black;
-  height: 60px;
+  height: 6rem;
   width: 100%;
   margin-top: 0;
-  padding: 5px;
+  padding: 0.6rem;
 }
 #navbar header img[alt=book] {
-  margin: 8px;
+  margin: 0.8rem;
   background-color: #ebd414;
   border-radius: 5px;
 }
 #navbar header h1 {
   color: white;
-  font-size: 45px;
+  font-size: 4.6rem;
   font-family: "Bebas Neue";
-  margin: -60px 70px;
+  margin: -6rem 7rem;
   display: table;
 }
 #navbar header .nav-text {
   float: right;
   color: white;
-  font-size: 20px;
-  margin: 20px 20px;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 #navbar header .nav-text .nav-a {
   text-decoration: none !important;
   color: white;
+  margin: 2rem;
 }
 #navbar header .nav-text .nav-a:hover {
   color: #fafa0b;
 }
 
 #Ebook_info {
-  margin: 90px 30px;
+  margin: 9rem 3rem;
   display: flex;
   width: max-content;
 }
 #Ebook_info img[alt=ebook] {
-  width: 300px;
-  height: 400px;
-  margin-right: 30px;
+  width: 30rem;
+  height: 40rem;
+  margin-right: 3rem;
 }
 #Ebook_info #book_info_text {
-  max-width: 500px;
-  font-size: 30px;
+  max-width: 50rem;
+  font-size: 3rem;
   font-family: "Roboto", "sans-serif";
   text-align: left;
 }
 
 #sign_up {
-  height: 580px;
-  width: 350px;
+  height: 58rem;
+  width: 35rem;
   background-color: #ffd973;
   float: right;
-  margin-top: 10px;
-  border-radius: 5px 0px 0px 5px;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem 0rem 0px 0.5rem;
+  box-shadow: -5px 5px 5px black;
 }
 #sign_up h2 {
   text-align: center;
-  font-size: 30px;
-  margin-top: 10px;
+  font-size: 3.3rem;
+  margin-top: 1rem;
 }
 #sign_up #sign_upFlex {
   display: flex;
   flex-direction: column;
 }
 #sign_up .pText {
-  font-size: 22px;
-  margin: 15px 15px;
+  font-size: 2.2rem;
+  margin: 1.5rem 1.5rem;
 }
 #sign_up .input {
   width: 50%;
-  height: 22px;
-  margin-left: 15px;
+  height: 2.2rem;
+  margin-left: 1.5rem;
 }
 #sign_up #confirm_span {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-family: "Roboto", "sans-serif";
   font-weight: bold;
-  margin: 15px 15px;
+  margin: 1.5rem 1.5rem;
 }
 #sign_up #signUpBtn {
-  width: 100px;
-  margin: 15px 15px;
-  font-size: 22px;
+  width: 10rem;
+  margin: 1.5rem 1.5rem;
+  font-size: 2.2rem;
   background-color: #e8fc26;
   border-radius: 5px;
   border-style: inset;
   border-color: #cada2f;
-  box-shadow: 3px 3px 5px black;
+  box-shadow: -3px 3px 5px black;
 }
 #sign_up #signUpBtn:hover {
   cursor: pointer;
@@ -115,17 +121,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 400px;
+  width: 50rem;
+  height: 40rem;
   background-color: white;
   border-radius: 5px;
   text-align: center;
+  box-shadow: -5px 5px 5px black;
 }
 #thankyou h3 {
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 #thankyou h4 {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 #about {
@@ -134,13 +141,123 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 500px;
-  height: 400px;
+  width: 50rem;
+  height: 40rem;
   margin: auto;
   text-align: center;
 }
 #about #aboutText {
-  font-size: 30px;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #navbar {
+    width: 100%;
+    height: 7rem;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+  }
+  #navbar header {
+    height: 7rem;
+    width: 100%;
+    margin-top: 0;
+    padding: 0.6rem;
+  }
+  #navbar header .nav-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+  #navbar header .nav-text .nav-a {
+    margin: 0.1rem 2.5rem;
+  }
+  #navbar header img[alt=book] {
+    width: 27px;
+    height: 27px;
+  }
+  #navbar header h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-family: "Bebas Neue";
+    margin: -4.5rem 4rem;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #Ebook_info {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  #Ebook_info img[alt=ebook] {
+    margin-top: 9rem;
+    min-width: 20rem;
+    min-height: 30rem;
+    margin: 0.5rem;
+  }
+  #Ebook_info #book_info_text {
+    min-width: 30rem;
+    max-width: 46rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  #sign_up {
+    height: 60rem;
+    width: 100%;
+    margin: 1.5rem;
+  }
+  #sign_up h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  #sign_up #confirm_span {
+    font-size: 2.2rem;
+    margin: 1.5rem 1.5rem;
+    width: 27rem;
+  }
+
+  #about {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 30rem;
+    height: 30rem;
+    margin: auto;
+    text-align: center;
+  }
+  #about #aboutText {
+    font-size: 2.2rem;
+  }
+
+  #thankyou {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: 25rem;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #thankyou h3 {
+    font-size: 3rem;
+  }
+  #thankyou h4 {
+    font-size: 2.2rem;
+    margin: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

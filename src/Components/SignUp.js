@@ -19,7 +19,7 @@ const SignUp = ({ validate }) => {
         <span id="confirm_span">
           <input type="radio" id="agree" />
           by signing up you agree to receive emails about our latest news and
-          products
+          products.
         </span>
         <button
           id="signUpBtn"

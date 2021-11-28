@@ -16,10 +16,10 @@ function App() {
           <Route
             path="/"
             element={
-              <>
+              <div className="Container">
                 <SignUp validate={validate} />
                 <EbookInfo />
-              </>
+              </div>
             }
           />
           <Route path="/about" element={<About />} />

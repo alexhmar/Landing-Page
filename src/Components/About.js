@@ -19,6 +19,8 @@ const About = () => {
         >
           Google Fonts.
         </a>
+        This website has been made only for desktop and smartphone and doesn't
+        support displays smaller than 320px or bigger than 1200px;
       </p>
     </div>
   );
