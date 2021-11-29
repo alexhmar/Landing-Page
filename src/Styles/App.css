@@ -186,40 +186,41 @@ body {
   .Container {
     display: flex;
     flex-direction: column-reverse;
+    align-items: flex-end;
   }
-
-  #Ebook_info {
+  .Container #Ebook_info {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     margin-right: 0.5rem;
     margin-bottom: 2rem;
+    width: 100%;
+    justify-content: end;
   }
-  #Ebook_info img[alt=ebook] {
+  .Container #Ebook_info img[alt=ebook] {
     margin-top: 9rem;
-    min-width: 20rem;
-    min-height: 30rem;
+    width: 20rem;
+    height: 30rem;
     margin: 0.5rem;
   }
-  #Ebook_info #book_info_text {
-    min-width: 30rem;
-    max-width: 46rem;
-    font-size: 2rem;
+  .Container #Ebook_info #book_info_text {
+    width: 30rem;
+    font-size: 2.2rem;
     margin-top: 2rem;
+    margin-left: 1.5rem;
   }
-
-  #sign_up {
+  .Container #sign_up {
     height: 60rem;
-    width: 100%;
-    margin: 1.5rem;
+    width: 30rem;
+    margin-bottom: 1.5rem;
   }
-  #sign_up h2 {
+  .Container #sign_up h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 1rem;
   }
-  #sign_up #confirm_span {
+  .Container #sign_up #confirm_span {
     font-size: 2.2rem;
     margin: 1.5rem 1.5rem;
     width: 27rem;
@@ -257,6 +258,161 @@ body {
   #thankyou h4 {
     font-size: 2.2rem;
     margin: 0.5rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #navbar header h1 {
+    font-size: 5rem;
+  }
+  #navbar .nav-text {
+    margin-top: 1rem;
+  }
+  #navbar .nav-text .nav-a {
+    font-size: 2rem;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .Container #Ebook_info img[alt=ebook] {
+    width: 15rem;
+    height: 20rem;
+    margin-left: -2rem;
+    margin-right: -1rem;
+  }
+  .Container #Ebook_info #book_info_text {
+    width: 30rem;
+    margin: 1.2rem;
+    width: 30rem;
+    font-size: 2.2rem;
+  }
+  .Container #sign_up {
+    width: 30rem;
+    height: 63rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-self: end;
+  }
+
+  #about {
+    height: 30rem;
+    width: 30rem;
+    margin-top: 5rem;
+  }
+  #about #aboutText {
+    font-size: 2rem;
+    width: 30rem;
+    margin-top: 5rem;
+  }
+
+  #thankyou {
+    width: 35rem;
+    height: 25rem;
+    margin-top: 5rem;
+  }
+  #thankyou h3 {
+    font-size: 3rem;
+  }
+  #thankyou h4 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .Container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #Ebook_info img[alt=ebook] {
+    width: 15rem;
+    height: 20rem;
+    margin-left: -2rem;
+    margin-right: 0;
+  }
+  #sign_up {
+    height: 65rem;
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about {
+    margin-top: 5rem;
+  }
+
+  #thankyou {
+    margin-top: 5rem;
+    width: 45rem;
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .Container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #Ebook_info {
+    margin-left: 0;
+    margin-right: 0.5rem;
+    width: 100%;
+  }
+  #Ebook_info img[alt=ebook] {
+    min-width: 20rem;
+    min-height: 30rem;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+
+  #sign_up {
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+    width: 45rem;
+    height: 63rem;
+  }
+
+  #about {
+    margin-top: 5rem;
+  }
+
+  #thankyou {
+    margin-top: 5rem;
+    width: 45rem;
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .Container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #Ebook_info {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+
+  #sign_up {
+    min-width: 50rem;
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about {
+    margin-top: 5rem;
+  }
+
+  #thankyou {
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+    height: 30rem;
+  }
+  #thankyou h3 {
+    font-size: 4.5rem;
+  }
+  #thankyou h4 {
+    font-size: 2.4rem;
   }
 }
 
