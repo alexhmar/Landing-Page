@@ -12,9 +12,9 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/thankyou" element={<ThankYou />} />
+          <Route path="Landing-Page/thankyou" element={<ThankYou />} />
           <Route
-            path="/"
+            path="Landing-Page/"
             element={
               <div className="Container">
                 <SignUp validate={validate} />
@@ -22,7 +22,7 @@ function App() {
               </div>
             }
           />
-          <Route path="/about" element={<About />} />
+          <Route path="Landing-Page/about" element={<About />} />
         </Routes>
       </Router>
     </div>
