@@ -9,11 +9,12 @@ import About from "./Components/About.js";
 function App() {
   return (
     <div className="Container1" id="div2">
-      <Router basename="/Landing-Page">
+      <Router>
         <Header />
         <Routes>
           <Route path="/thankyou" element={<ThankYou />} />
           <Route
+            exact
             path="/"
             element={
               <div className="Container">
