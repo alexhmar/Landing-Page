@@ -3,13 +3,13 @@ import SignUp from "./Components/SignUp.js";
 import EbookInfo from "./Components/EbookInfo.js";
 import "./Styles/App.css";
 import { validate } from "./Redux/SignUpThanks";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ThankYou from "./Components/ThankYou.js";
 import About from "./Components/About.js";
 function App() {
   return (
     <div className="Container-fluid" id="div2">
-      <HashRouter basename="/Landing-Page">
+      <Router basename="/Landing-Page">
         <Header />
         <Routes>
           <Route path="/thankyou" element={<ThankYou />} />
@@ -25,7 +25,7 @@ function App() {
           />
           <Route path="/about" element={<About />} />
         </Routes>
-      </HashRouter>
+      </Router>
     </div>
   );
 }
