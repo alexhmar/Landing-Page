@@ -14,7 +14,6 @@ function App() {
         <Routes>
           <Route path="/thankyou" element={<ThankYou />} />
           <Route
-            exact
             path="/"
             element={
               <div className="Container">
