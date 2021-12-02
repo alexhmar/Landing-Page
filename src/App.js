@@ -12,7 +12,7 @@ function App() {
       <Router basename="/Landing-Page">
         <Header />
         <Routes>
-          <Route exact path="/thankyou" element={<ThankYou />} />
+          <Route exact path="Landing-Page/thankyou" element={<ThankYou />} />
           <Route
             exact
             path="/Landing-Page"
@@ -23,7 +23,7 @@ function App() {
               </div>
             }
           />
-          <Route exact path="/about" element={<About />} />
+          <Route exact path="Landing-Page/about" element={<About />} />
         </Routes>
       </Router>
     </div>
