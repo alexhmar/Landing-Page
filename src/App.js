@@ -16,12 +16,12 @@ function App() {
     <div className="Container-fluid" id="div2">
       <Router>
         <Header />
-        <HashRouter basename="/">
+        <HashRouter basename="Landing-Page/">
           <Routes>
-            <Route path="/thankyou" element={<ThankYou />} />
+            <Route path="Landing-Page/thankyou" element={<ThankYou />} />
             <Route
               exact
-              path="/"
+              path="Landing-Page/"
               element={
                 <div className="Container">
                   <SignUp validate={validate} />
@@ -29,7 +29,7 @@ function App() {
                 </div>
               }
             />
-            <Route path="/about" element={<About />} />
+            <Route path="Landing-Page/about" element={<About />} />
           </Routes>
         </HashRouter>
       </Router>
