@@ -13,10 +13,10 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="Landing-Page/thankyou" element={<ThankYou />} />
+          <Route path="/Landing-Page/thankyou" element={<ThankYou />} />
           <Route
             exact
-            path="Landing-Page/"
+            path="/Landing-Page/"
             element={
               <div className="Container">
                 <SignUp validate={validate} />
@@ -24,7 +24,7 @@ function App() {
               </div>
             }
           />
-          <Route path="Landing-Page/about" element={<About />} />
+          <Route path="/Landing-Page/about" element={<About />} />
         </Routes>
       </Router>
     </div>
