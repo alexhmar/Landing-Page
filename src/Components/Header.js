@@ -5,10 +5,10 @@ const Header = () => {
         <img src="images/book.png" alt="book" width="40px" height="40px" />
         <h1>Landing Page</h1>
         <p className="nav-text">
-          <a className="nav-a" href="/about">
+          <a className="nav-a" href="Landing-Page/about">
             About
           </a>
-          <a className="nav-a" href="/">
+          <a className="nav-a" href="Landing-Page/">
             Home
           </a>
         </p>
