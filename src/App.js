@@ -15,7 +15,7 @@ function App() {
           <Route path="/thankyou" element={<ThankYou />} />
           <Route
             exact
-            path="/"
+            path="/Landing-Page/"
             element={
               <div className="Container">
                 <SignUp validate={validate} />
