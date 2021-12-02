@@ -12,7 +12,7 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Routes>
-          <Route path="/thankyou" element={<ThankYou />} />
+          <Route exact path="/thankyou" element={<ThankYou />} />
           <Route
             exact
             path="/"
@@ -23,7 +23,7 @@ function App() {
               </div>
             }
           />
-          <Route path="/about" element={<About />} />
+          <Route exact path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>
