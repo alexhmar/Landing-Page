@@ -3,29 +3,27 @@ import SignUp from "./Components/SignUp.js";
 import EbookInfo from "./Components/EbookInfo.js";
 import "./Styles/App.css";
 import { validate } from "./Redux/SignUpThanks";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ThankYou from "./Components/ThankYou.js";
 import About from "./Components/About.js";
 function App() {
   return (
     <div className="Container1" id="div2">
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/thankyou" element={<ThankYou />} />
-          <Route
-            exact
-            path="/Landing-Page"
-            element={
-              <div className="Container">
-                <SignUp validate={validate} />
-                <EbookInfo />
-              </div>
-            }
-          />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Router>
+      <Header />
+      <Routes>
+        <Route path="/thankyou" element={<ThankYou />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <div className="Container">
+              <SignUp validate={validate} />
+              <EbookInfo />
+            </div>
+          }
+        />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
