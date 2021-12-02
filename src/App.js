@@ -16,7 +16,7 @@ function App() {
     <div className="Container-fluid" id="div2">
       <Router>
         <Header />
-        <HashRouter basename="Landing-Page/">
+        <HashRouter basename="/">
           <Routes>
             <Route path="Landing-Page/thankyou" element={<ThankYou />} />
             <Route
