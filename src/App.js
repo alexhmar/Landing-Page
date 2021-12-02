@@ -9,7 +9,7 @@ import About from "./Components/About.js";
 function App() {
   return (
     <div className="Container-fluid" id="div2">
-      <Router basename="/Landing-Page">
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
 
         <Routes>
