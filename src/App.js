@@ -9,10 +9,10 @@ import About from "./Components/About.js";
 function App() {
   return (
     <div className="Container-fluid" id="div2">
-      <Router>
+      <Router basename="/Landing-Page">
         <Header />
 
-        <Routes basename="/Landing-Page">
+        <Routes>
           <Route path="/thankyou" element={<ThankYou />} />
           <Route
             exact
