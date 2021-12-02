@@ -3,7 +3,7 @@ import SignUp from "./Components/SignUp.js";
 import EbookInfo from "./Components/EbookInfo.js";
 import "./Styles/App.css";
 import { validate } from "./Redux/SignUpThanks";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ThankYou from "./Components/ThankYou.js";
 import About from "./Components/About.js";
 function App() {
