@@ -9,7 +9,7 @@ import About from "./Components/About.js";
 function App() {
   return (
     <div className="Container1" id="div2">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/Landing-Page">
         <Header />
         <Routes>
           <Route exact path="/thankyou" element={<ThankYou />} />
