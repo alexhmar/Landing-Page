@@ -8,14 +8,14 @@ import ThankYou from "./Components/ThankYou.js";
 import About from "./Components/About.js";
 function App() {
   return (
-    <div className="Container-fluid" id="div2">
+    <div className="Container1" id="div2">
       <Router basename="/Landing-Page">
         <Header />
         <Routes>
           <Route path="/thankyou" element={<ThankYou />} />
           <Route
             exact
-            path="/Landing-Page/"
+            path="/"
             element={
               <div className="Container">
                 <SignUp validate={validate} />
