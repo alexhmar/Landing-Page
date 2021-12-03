@@ -3,7 +3,7 @@ import SignUp from "./Components/SignUp.js";
 import EbookInfo from "./Components/EbookInfo.js";
 import "./Styles/App.css";
 import { validate } from "./Redux/SignUpThanks";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ThankYou from "./Components/ThankYou.js";
 import About from "./Components/About.js";
 function App() {
@@ -12,10 +12,10 @@ function App() {
       <Router basename="/">
         <Header />
         <Routes>
-          <Route exact path="Landing-Page/thankyou" element={<ThankYou />} />
+          <Route path="/thankyou" element={<ThankYou />} />
           <Route
             exact
-            path="/Landing-Page"
+            path="/"
             element={
               <div className="Container">
                 <SignUp validate={validate} />
@@ -23,7 +23,7 @@ function App() {
               </div>
             }
           />
-          <Route exact path="Landing-Page/about" element={<About />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>
