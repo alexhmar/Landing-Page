@@ -38,7 +38,7 @@ export const SignUpThanks = createSlice({
       state.signup = !state.signup;
 
       if (state.signup === true) {
-        window.location.href += "/thankyou";
+        window.location.assign(window.location.href + "/thankyou");
       }
     },
   },
